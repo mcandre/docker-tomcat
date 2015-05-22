@@ -8,8 +8,8 @@ https://registry.hub.docker.com/u/mcandre/docker-tomcat/
 
 ```
 $ make
-docker build -t mcandre/docker-tomcat:8 .
-docker run -d -p 8080:8080 mcandre/docker-tomcat:8
+docker build -t mcandre/docker-tomcat:latest .
+docker run -d -p 8080:8080 mcandre/docker-tomcat:latest
 680099c1e25b4b88fa0c751fbc748398002dace46fb953aba1a050a0ce0c1ba0
 sleep 2
 time curl -s http://$(boot2docker ip):8080 | head

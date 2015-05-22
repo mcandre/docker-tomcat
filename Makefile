@@ -1,4 +1,4 @@
-IMAGE=mcandre/docker-tomcat:8
+IMAGE=mcandre/docker-tomcat:latest
 
 LOCALHOST=$$(boot2docker ip)
 
