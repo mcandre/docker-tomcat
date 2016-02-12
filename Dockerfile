@@ -9,4 +9,4 @@ RUN echo "deb http://cz.archive.ubuntu.com/ubuntu vivid main universe" >> /etc/a
     mkdir /var/lib/tomcat8/temp && \
     chown -R tomcat8:tomcat8 /var/lib/tomcat8/temp
 EXPOSE 8080
-ENTRYPOINT /usr/share/tomcat8/bin/catalina.sh run
+ENTRYPOINT ["/usr/share/tomcat8/bin/catalina.sh", "run"]
